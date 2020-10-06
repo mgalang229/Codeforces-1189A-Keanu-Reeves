@@ -18,18 +18,15 @@ int main() {
 		else
 			z++;
 	}
-	if(n==1) {
-		cout << 1 << "\n" << a[0] << "\n";
-		return 0;
-	} else if (o!=z) {
+	if(o!=z) {
 		cout << 1 << "\n";
 		for(int i=0; i<n; ++i)
 			cout << a[i];
 		cout << "\n";
-		return 0;
+	} else {
+		cout << 2 << "\n";
+		for(int i=0; i<n-1; ++i)
+			cout << a[i];
+		cout << " " << a[n-1] << "\n";
 	}
-	cout << 2 << "\n";
-	for(int i=0; i<n-1; ++i)
-		cout << a[i];
-	cout << " " << a[n-1] << "\n";
 }
